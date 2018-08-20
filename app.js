@@ -25,3 +25,29 @@ checkAge("Charles", 21);
 checkAge("Abby", 27);
 checkAge("James", 18);
 checkAge("John", 17);
+
+//Array of favorite vegetables
+let favVeggies = ["cucumbers", "green beans", "peas"];
+
+//Loop to display all the favorite vegetables
+for (let i = 0; i < favVeggies.length; i++){
+    console.log(favVeggies[i]);
+};
+
+//Creating an array of 5 objects that contain a name and age property
+let objArray = [{name: "Jess", age:28}, {name: "Jeremy", age: 29}, {name: "Lexi", age:5}, {name:"Abby", age:17}];
+
+//Loop that calls checkAge function on each person in array
+for (let i = 0; i < objArray.length; i++){
+    let name = objArray[i].name;
+    let age = objArray[i].age;
+    checkAge(name, age);
+    
+};
+
+//Function that takes any word as an argument and returns the number of characters in the string
+let word = prompt("Enter a word: ");
+function getLength(word){
+    let length = word.length;
+    return length;
+}
