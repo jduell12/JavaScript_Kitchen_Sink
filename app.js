@@ -50,4 +50,9 @@ let word = prompt("Enter a word: ");
 function getLength(word){
     let length = word.length;
     return length;
-}
+};
+if (length%2 == 0){
+    console.log("The world is nice and even!");
+} else {
+    console.log("The world is an odd place!");
+};
